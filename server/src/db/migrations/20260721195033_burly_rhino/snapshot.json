@@ -1,109 +1,105 @@
 {
-  "version": "6",
-  "dialect": "mysql",
-  "id": "66e847d1-6f63-41b6-b4ae-413be35c778b",
-  "prevIds": [
-    "00000000-0000-0000-0000-000000000000"
-  ],
-  "ddl": [
-    {
-      "name": "urls",
-      "entityType": "tables"
-    },
-    {
-      "type": "int",
-      "notNull": true,
-      "autoIncrement": true,
-      "default": null,
-      "onUpdateNow": false,
-      "onUpdateNowFsp": null,
-      "charSet": null,
-      "collation": null,
-      "generated": null,
-      "name": "id",
-      "entityType": "columns",
-      "table": "urls"
-    },
-    {
-      "type": "varchar(255)",
-      "notNull": true,
-      "autoIncrement": false,
-      "default": null,
-      "onUpdateNow": false,
-      "onUpdateNowFsp": null,
-      "charSet": null,
-      "collation": null,
-      "generated": null,
-      "name": "original_url",
-      "entityType": "columns",
-      "table": "urls"
-    },
-    {
-      "type": "varchar(255)",
-      "notNull": true,
-      "autoIncrement": false,
-      "default": null,
-      "onUpdateNow": false,
-      "onUpdateNowFsp": null,
-      "charSet": null,
-      "collation": null,
-      "generated": null,
-      "name": "short_url",
-      "entityType": "columns",
-      "table": "urls"
-    },
-    {
-      "type": "timestamp",
-      "notNull": true,
-      "autoIncrement": false,
-      "default": "(now())",
-      "onUpdateNow": false,
-      "onUpdateNowFsp": null,
-      "charSet": null,
-      "collation": null,
-      "generated": null,
-      "name": "createdAt",
-      "entityType": "columns",
-      "table": "urls"
-    },
-    {
-      "type": "timestamp",
-      "notNull": true,
-      "autoIncrement": false,
-      "default": "(now())",
-      "onUpdateNow": true,
-      "onUpdateNowFsp": null,
-      "charSet": null,
-      "collation": null,
-      "generated": null,
-      "name": "updatedAt",
-      "entityType": "columns",
-      "table": "urls"
-    },
-    {
-      "columns": [
-        "id"
-      ],
-      "name": "PRIMARY",
-      "table": "urls",
-      "entityType": "pks"
-    },
-    {
-      "columns": [
-        {
-          "value": "short_url",
-          "isExpression": false
-        }
-      ],
-      "isUnique": true,
-      "using": null,
-      "algorithm": null,
-      "lock": null,
-      "nameExplicit": false,
-      "name": "short_url_unique",
-      "table": "urls",
-      "entityType": "indexes"
-    }
-  ],
-  "renames": []
+	"version": "6",
+	"dialect": "mysql",
+	"id": "66e847d1-6f63-41b6-b4ae-413be35c778b",
+	"prevIds": ["00000000-0000-0000-0000-000000000000"],
+	"ddl": [
+		{
+			"name": "urls",
+			"entityType": "tables"
+		},
+		{
+			"type": "int",
+			"notNull": true,
+			"autoIncrement": true,
+			"default": null,
+			"onUpdateNow": false,
+			"onUpdateNowFsp": null,
+			"charSet": null,
+			"collation": null,
+			"generated": null,
+			"name": "id",
+			"entityType": "columns",
+			"table": "urls"
+		},
+		{
+			"type": "varchar(255)",
+			"notNull": true,
+			"autoIncrement": false,
+			"default": null,
+			"onUpdateNow": false,
+			"onUpdateNowFsp": null,
+			"charSet": null,
+			"collation": null,
+			"generated": null,
+			"name": "original_url",
+			"entityType": "columns",
+			"table": "urls"
+		},
+		{
+			"type": "varchar(255)",
+			"notNull": true,
+			"autoIncrement": false,
+			"default": null,
+			"onUpdateNow": false,
+			"onUpdateNowFsp": null,
+			"charSet": null,
+			"collation": null,
+			"generated": null,
+			"name": "short_url",
+			"entityType": "columns",
+			"table": "urls"
+		},
+		{
+			"type": "timestamp",
+			"notNull": true,
+			"autoIncrement": false,
+			"default": "(now())",
+			"onUpdateNow": false,
+			"onUpdateNowFsp": null,
+			"charSet": null,
+			"collation": null,
+			"generated": null,
+			"name": "createdAt",
+			"entityType": "columns",
+			"table": "urls"
+		},
+		{
+			"type": "timestamp",
+			"notNull": true,
+			"autoIncrement": false,
+			"default": "(now())",
+			"onUpdateNow": true,
+			"onUpdateNowFsp": null,
+			"charSet": null,
+			"collation": null,
+			"generated": null,
+			"name": "updatedAt",
+			"entityType": "columns",
+			"table": "urls"
+		},
+		{
+			"columns": ["id"],
+			"name": "PRIMARY",
+			"table": "urls",
+			"entityType": "pks"
+		},
+		{
+			"columns": [
+				{
+					"value": "short_url",
+					"isExpression": false
+				}
+			],
+			"isUnique": true,
+			"using": null,
+			"algorithm": null,
+			"lock": null,
+			"nameExplicit": false,
+			"name": "short_url_unique",
+			"table": "urls",
+			"entityType": "indexes"
+		}
+	],
+	"renames": []
 }
